@@ -122,6 +122,6 @@ body{
     background: #f5f5f5;
 }
 
-.menu li i{
+.menu li span{
     padding-right: 8px;
 }
