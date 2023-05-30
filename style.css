@@ -147,7 +147,10 @@ body{
     justify-content: center;
     transform: translate(-50%, -50%);
 }
-
+.popup-box, .popup-box .popup{
+    opacity: 0;
+    pointer-events: none;
+}
 .popup .content{
     width: calc(100% - 15px);
     background: #fff;
@@ -197,6 +200,7 @@ form .row label{
 .content form textarea{
     height: 150px;
     resize: none;
+    padding: 8px 15px;
 }
 
 .content form button{
