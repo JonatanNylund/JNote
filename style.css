@@ -26,7 +26,7 @@ body{
     padding: 15px 20px 20px;
 }
 
-.add-box{
+.add-box, .icon{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -34,5 +34,28 @@ body{
 }
 
 .add-box .icon{
-    
+    height: 78px;
+    width: 78px;
+    color: #88ABFF;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 2px dashed #88ABFF;    
+}
+
+.add-box p{
+    color: #88ABFF;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.note p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.note span{
+    display: block;
+    margin-top: ;
+    color: #575757;
+    font-size: 16px;
 }
