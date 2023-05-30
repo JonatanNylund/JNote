@@ -100,7 +100,13 @@ body{
     background: #fff;
     border-radius: 4px;
     transform: scale(0);
+    transform-origin: botton right;
     box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.settings:hover .menu{
+    transform: scale(1);
 }
 
 .settings .menu li{
