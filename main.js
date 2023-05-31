@@ -5,6 +5,8 @@ titleTag = popupBox.querySelector("input"),
 descTag = popupBox.querySelector("textarea"),
 addBtn = popupBox.querySelector("button");
 
+const months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "Septeber", "Oktober", "November", "December"];
+
 addBox.addEventListener("click", () =>{
     popupBox.classList.add("show");
 });
@@ -18,6 +20,18 @@ addBtn.addEventListener("click", e =>{
     let noteTitle = titleTag.value,
     noteDesc = descTag.value;
 
-    if(noteTitle )
-    console.log(noteTitle, noteDesc);
+    if(noteTitle || noteDesc){
+        let dateObj = new Date(),
+        month = months[dateObj.getMonth()],
+        day = dateObj.getDate(),
+        year = dateObj.getFullYear();
+
+        let noteInfo = {
+            title: noteTitle, description: noteDesc,
+            date: `${month} ${day}, ${year} `
+        }
+        const notes = [];
+        notes.push(noteInfo);
+        localStorage.setItem("notes", JSON.stringify(notes));
+    }
 });
