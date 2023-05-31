@@ -6,7 +6,7 @@ descTag = popupBox.querySelector("textarea"),
 addBtn = popupBox.querySelector("button");
 
 const months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "Septeber", "Oktober", "November", "December"];
-
+const notes = JSON.parse(localStorage.getItem(""))
 addBox.addEventListener("click", () =>{
     popupBox.classList.add("show");
 });
